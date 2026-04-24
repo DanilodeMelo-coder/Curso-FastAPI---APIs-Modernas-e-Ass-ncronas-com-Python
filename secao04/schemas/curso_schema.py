@@ -7,5 +7,4 @@ class CursoSchema(SCBaseModel):
     aulas: int
     horas: int
 
-    class Config:
-        orm_mode = True
+    model_config = {"from_attributes": True}
